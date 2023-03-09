@@ -8,3 +8,327 @@
     line-height: 1.3;
     transition: all 0.3s;
 }
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 1.7em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    background: #292929;
+    overflow: hidden;
+}
+
+.logo {
+    height: 60px;
+    width: 100px;
+    color: #ffffff;
+    display: block;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: #339933;
+    text-decoration: none;
+}
+
+.foto {
+    margin-right: 10%;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu__link {
+    text-decoration: none;
+    padding: 50px 30px;
+    display: block;
+    border-bottom: 3px solid #292929;
+}
+
+.menu__link:hover {
+    border-bottom: 3px solid #339933;
+    color: #339933;
+}
+
+.main-conteiner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    background-color: rgb(28, 28, 39);
+    border-radius: 10px;
+}
+
+.About_me {
+    display: flex;
+}
+
+.contacts {
+    margin-top: 10px;
+}
+
+.foto_logo {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.contacts_link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.contact {
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.contact_icon {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact_icon:hover.contact_icon i {
+    color: #339933;
+}
+
+.contact_icon:hover.contact_icon p {
+    color: #339933;
+}
+
+.contact_icon i {
+    font-size: 1.7em;
+}
+
+.contact_icon p {
+    margin-left: 10px;
+    line-height: 1.7;
+}
+
+.skils {
+    padding: 40px 0;
+    max-width: 100%;
+}
+
+.skils_menu {
+    list-style: disc;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skils_menu_item {
+    margin-right: 50px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.code {
+    max-width: 100%;
+}
+
+.code_example {
+    background-color: #151d15;
+    padding: 20px 10px;
+}
+
+.code_example p {
+    font-size: 1.2em;
+}
+
+.courses {
+    margin-top: 20px;
+}
+
+.courses_menu {
+    list-style-type: style;
+    margin-left: 20px;
+}
+
+.courses_menu_item {
+    margin-bottom: 5px;
+}
+
+.education {
+    margin: 30px 0;
+}
+
+.footer {
+    background-color: #798a79;
+}
+
+.footer_option {
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_option div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rs_school_logo {
+    height: 60px;
+    width: 100px;
+    color: #ffffff;
+    display: block;
+}
+
+.year a {
+    font-size: 1.7em;
+}
+
+.year a:hover {
+    color: #339933;
+}
+
+.github a {
+    font-size: 1.2em;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.portfolio_logo {
+    min-width: 300px;
+    max-width: 300px;
+    border-radius: 10px;
+    display: block;
+}
+
+.portfolio_main {
+    display: flex;
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+.portfolio_left {
+    margin-right: 4%;
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.portfolio_left:hover .portfolio_img_figcaption {
+    color: #339933;
+    font-size: 1.6em;
+    transition: all 0.5s ease-out;
+}
+
+.portfolio_left:hover .portfolio_logo {
+    max-width: 320px;
+    transition: all 0.5s ease-out;
+}
+
+.Portfolio_right {
+    flex-basis: 50%;
+}
+
+.portfolio_img_figcaption {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 730px) {
+    .About_me {
+        flex-direction: column;
+    }
+
+    .foto {
+        margin-right: 0px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .About_me_information {
+        display: flex;
+    }
+
+    .contacts {
+        margin-top: 0px;
+    }
+
+    .about {
+        margin-right: 5%;
+        text-align: center;
+    }
+
+    .contact {
+        margin-right: 0px;
+        min-width: 290px;
+    }
+
+    .main-conteiner {
+        padding: 20px 15px;
+    }
+
+    .portfolio_main {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .portfolio_logo {
+        max-width: 90%;
+    }
+
+    .portfolio_left:hover .portfolio_logo {
+        max-width: 94%;
+    }
+
+    .portfolio_left {
+        margin-right: 0px;
+    }
+
+    .portfolio_img_figcaption {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .About_me_information {
+        display: block;
+    }
+
+    .contacts {
+        margin-top: 25px;
+    }
+
+    .skils_menu {
+        display: block;
+        row-gap: 20px;
+        column-count: 3;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .skils_menu {
+        column-count: 2;
+    }
+}
