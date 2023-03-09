@@ -76,7 +76,7 @@ header {
     margin: 0 auto;
     padding: 20px 30px;
     background-color: rgb(28, 28, 39);
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .About_me {
@@ -254,7 +254,18 @@ header {
     margin-top: 10px;
     font-size: 1.2em;
 }
-
+.footer{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    background-color: rgb(28, 28, 39);
+    border-top: 1px solid rgb(243 202 202);
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
 @media screen and (max-width: 730px) {
     .About_me {
         flex-direction: column;
@@ -288,7 +299,9 @@ header {
     .main-conteiner {
         padding: 20px 15px;
     }
-
+    .footer{
+        padding: 20px 15px;
+    }
     .portfolio_main {
         display: block;
         margin-bottom: 30px;
@@ -330,5 +343,12 @@ header {
 @media screen and (max-width: 430px) {
     .skils_menu {
         column-count: 2;
+    }
+    .rs_school_logo{
+        height: 40px;
+        width: 72px;
+    }
+    .foto_logo{
+        max-height: 240px;
     }
 }
